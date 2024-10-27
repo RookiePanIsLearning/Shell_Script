@@ -1,0 +1,179 @@
+UI.sh
+
+#!/bin/bash
+
++---------------------------+
+|    Main Funciton          |
++---------------------------+
+| 1. adb commands           |  # Like basic command adb devices or something.
+| 2. System Settings        |  # System setting, Wi-Fi, Dev, BT... etc
+|                           |
++  ***** Precondition ***** +
+| 3. Install apks           |  # Precondition : GMScore. 
+| 4. Login Google accounts  |  # Precondition : Login testing account.
+| 5. adb Push files         |  # Precondition : Push testing files.
+|                           |
++  **** For debbuging ***** +
+| 6. adb bugreport          |  # Debugging : Generate bugreport 
+| 7. adb pull               |  # Debugging : Get Screen record, or something.
+| 8. adb shell input text   |  # Debugging : Enable Flags, turn on text.
+| 9. Update apps            |  # Opne playstore and navigate to xxx apk pages.
+|                           |
++---------------------------+
+| D. defaul:System,GMS,acc  |
+| Q. Quit                   | # Quit System Settnings.
++---------------------------+
+
+**System Settings**
+
+    +---------------------------+
+    |    System Setting         |
+    +---------------------------+
+    | 1. Root                   |  # Give admiinistrative role.
+    | 2. Skip Setup Wizard      |  # Use command to skip SUW, or taps 4 corner with commands.
+    | 3. Display Settings       |  # like diplay time or someting 
+    | 4. Wi-Fi                  |  # Enabel, Disable, Connect, Sacning, ... tec
+    | 5. Dev                    |  # For debugging, Buffer size, HCI snoop logs.
+    | 6. QS tile                |  # Arrange Quick Share tiles  
+    | 7.                        | 
+    +---------------------------+
+    | D. Default settings       | # Default setting for testing.
+    | F. Find & input text      | # Go to serch page and input the keyword.
+    | Q. Quit                   | # Quit System Settnings.
+    +---------------------------+
+
+
+
+        +---------------------------+
+        |  System >> 4. Wi-Fi       |
+        +---------------------------+
+        | 1. Wifi on                |  
+        | 2. Wifi off               |  
+        | 3. Scan nearby Wi-Fi      |  
+        + ************************* +
+        | 4. Google GUEST           |
+        | 5. QuickShare_Team        |
+        | 6. Nearby_Share_1         |
+        | 7. PTE_AQTI_B&R_5GHz_1    |
+        +---------------------------+
+        | F. Forget all Wi-Fi to    | # Clean up all wi-fi settings.
+        | D. Default                | # Save 3 Wi-Fi and connet to Testing local Wi-Fi.
+        | Q. Quit                   | # Quit and go to Main Funciton.
+        +---------------------------+
+
+
+**Precondition**
++---------------------------+
+|    Main Funciton          |
++---------------------------+
+| 1. adb commands           |  # Like basic command adb devices or something.
+| 2. System Settings        |  # System setting, Wi-Fi, Dev, BT... etc
+|                           |
++  ***** Precondition ***** +
+| 3. Install apks           |  # Precondition : GMScore. 
+| 4. Login Google accounts  |  # Precondition : Login testing account.
+| 5. adb Push files         |  # Precondition : Push testing files.
+|                           |
++  **** For debbuging ***** +
+| 6. adb bugreport          |  # Debugging : Generate bugreport 
+| 7. adb pull               |  # Debugging : Get Screen record, or something.
+| 8. adb shell input text   |  # Debugging : Enable Flags, turn on text.
+| 9. Update apps            |  # Opne playstore and navigate to xxx apk pages.
+|                           |
++---------------------------+
+| D. defaul:System,GMS,acc  |
+| Q. Quit                   | # Quit System Settnings.
++---------------------------+
+
+
+
+    +---------------------------+
+    |    Install apks           | # TBD, I think it should pops up all Latest version of GMScore
+    +---------------------------+ 
+    | 1. xx.xx.xx               | # Maybe it should show up latest one , with
+    | 2. xx.xx.xx               | # Second latest verison 
+    |                           | # Third latest verison
+    +---------------------------+
+    | M. Mobile Utilites        | # Manual install Mobile Utilites, It should be install after GMScore done.            
+    | Q. Quit                   | # Quit System Settnings.
+    +---------------------------+
+
+
+
+    +---------------------------+
+    |   Login Google accounts   |
+    +---------------------------+
+    |   ** Manual testing **    | 
+    | 1. ns09.testing           |  
+    | 2. ns10.testing           |  
+    | 3. ns11.testing           |
+    | 4. ns12.testing           |
+    +---------------------------+
+    | Q. Quit                   | # Quit, Will navigate to Main Function page.
+    +---------------------------+
+
+
+    +---------------------------+
+    |   adb push files          |
+    +---------------------------+
+    |   ** Manual testing **    | 
+    | 1. Videos                 |  
+    | 2. Photos                 |  
+    | 3. All_type_files         |
+    |                           |
+    +---------------------------+
+    | A. Push All files         |
+    | Q. Quit                   | # Quit, Will navigate to Main Function page.
+    +---------------------------+
+
+
+
+** For debugging **
++---------------------------+
+|    Main Funciton          |
++---------------------------+
+| 1. adb commands           |  # Like basic command adb devices or something.
+| 2. System Settings        |  # System setting, Wi-Fi, Dev, BT... etc
+|                           |
++  ***** Precondition ***** +
+| 3. Install apks           |  # Precondition : GMScore. 
+| 4. Login Google accounts  |  # Precondition : Login testing account.
+| 5. adb Push files         |  # Precondition : Push testing files.
+|                           |
++  **** For debbuging ***** +
+| 6. adb bugreport          |  # Debugging : Generate bugreport 
+| 7. adb pull               |  # Debugging : Get Screen record, or something.
+| 8. adb shell input text   |  # Debugging : Enable Flags, turn on text.
+| 9. Update apps            |  # Opne playstore and navigate to xxx apk pages.
+|                           |
++---------------------------+
+| D. defaul:System,GMS,acc  |
+| Q. Quit                   | # Quit System Settnings.
++---------------------------+
+
+    +---------------------------+
+    |   Input text              |
+    +---------------------------+
+    | 1.                        |  
+    +---------------------------+
+    | Q. Quit                   | # Quit, Will navigate to Main Function page.
+    +---------------------------+
+
+
+
+    +---------------------------+
+    |   Update apks             |
+    +---------------------------+
+    | 1. Photos                 |  
+    | 2. Files                  |  
+    | 3. Mobile Utilites        |
+    | 4. Google Maps            |
+    | 5. Youtube                |
+    | 6. Chrome                 |
+    | 7. Contact                | 
+    +---------------------------+
+    | A. All apks               |
+    | Q. Quit                   | # Quit, Will navigate to Main Function page.
+    +---------------------------+
+
+
